@@ -1,0 +1,16 @@
+﻿@model Author
+
+<h2>Author details:</h2>
+<h4>Id: @Model.Id</h4>
+@if (Model.Id == 1)
+{
+    <h4>This is the author you have been looking for.</h4>
+}
+
+@{
+    Author author2 = StaticDB.Authors.SingleOrDefault(y => y.Id.Equals(2));
+    <h4>@author2.Name</h4>
+}
+
+<h4>Name: @Model.Name</h4>
+<h4>Date of birth: @Model.DateOfBirth</h4>

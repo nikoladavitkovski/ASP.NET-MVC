@@ -1,0 +1,14 @@
+﻿@model PublishingHouse
+
+<h2>Id: @Model.Id</h2>
+@if(Model.Id == 1)
+            {
+                <h4>This is the publishing house you have been looking for.</h4>
+            }
+
+@{ 
+    PublishingHouse publishingHouse = StaticDB.PublishingHouses.SingleOrDefault(x => x.Id.Equals(1));
+    <h4>@publishingHouse.Id</h4>
+}
+
+<h4>Name: @Model.Name</h4>
