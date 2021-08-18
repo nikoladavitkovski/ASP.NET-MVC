@@ -1,7 +1,7 @@
 ﻿@model Author
 
-<h4>Id: @Model.Id</h4>
-<h4>Name: @Model.Name</h4>
-<h4>Date of birth: @Model.DateOfBirth</h4>
+<h4>@Html.Label("Id") @Html.Display("Id")</h4>
+<h4>@Html.Label("Name") @Html.Display("Name")</h4>
+<h4>@Html.Label("Date of birth") @Html.Display("Date of birth")</h4>
 
 @Html.Partial("Separator");

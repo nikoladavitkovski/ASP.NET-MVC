@@ -1,6 +1,8 @@
 ﻿@model Author
 
-<h2>Author details:</h2>
+<h2>Author details: @Html.Label("Id") @Html.Display("Id")</h2>
+<h4>@Html.Label("Name") @Html.Display("Name")</h4>
+<h4>@Html.Label("Date of birth") @Html.Display("Date of birth")</h4>
 <h4>Id: @Model.Id</h4>
 @if(Model.Id == 1)
             {
