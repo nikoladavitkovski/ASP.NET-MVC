@@ -1,0 +1,24 @@
+﻿@model BookViewModel
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Author</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(BookViewModel book in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => modelItem.Id)</td>
+                    <td>@Html.DisplayFor(modelItem => modelItem.Title)</td>
+                    <td>@Html.DisplayFor(modelItem => modelItem.Author)</td>
+                    <a asp-action="Edit" asp-route-id="@book.Id">Edit</a>
+                    <a asp-action="Details" asp-route-id="@book.Id">Details</a>
+                    <a asp-action="Delete" asp-route-id="@book.Id">Delete</a>
+                </tr>
+            }
+    </tbody>
+</table>
