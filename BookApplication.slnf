@@ -1,0 +1,11 @@
+{
+  "solution": {
+    "path": "SEDC.BookApp.sln",
+    "projects": [
+      "SEDC.BookApp.DataAccess\\SEDC.BookApp.DataAccess.csproj",
+      "SEDC.BookApp.Domain\\SEDC.BookApp.Domain.csproj",
+      "SEDC.BookApp.Services\\SEDC.BookApp.Services.csproj",
+      "SEDC.BookApp\\SEDC.BookApp.csproj"
+    ]
+  }
+}
